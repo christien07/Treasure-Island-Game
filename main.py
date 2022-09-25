@@ -23,7 +23,12 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
  """
     print(art)
     print("Welcome to Treasure Island.")
-    print("")
+    print("Your mission is to find the treasure.")
+    direction = input("You're at a cross road, which way do you want to go? Type 'left' or 'right'\n")
+    if direction == "left":
+        # ...
+    elif direction == "right":
+        # ...
 
 if __name__ == "__main__":
     main()
