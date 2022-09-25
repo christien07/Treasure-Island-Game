@@ -25,10 +25,20 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
     print("Welcome to Treasure Island.")
     print("Your mission is to find the treasure.")
     direction = input("You're at a cross road, which way do you want to go? Type 'left' or 'right'\n")
-    if direction == "left":
-        # ...
-    elif direction == "right":
-        # ...
+    if direction.lower() == "left":
+        left_turn = input("This direction is flooded. Swim or wait?\n")
+        if left_turn.lower() == "wait":
+            door = input("You waited for the flooding to subside and find a cellar. Inside the cellar, a doorway stands before you. Would you like to open the 'red' door or 'blue' door?")
+            if door = "red":
+                # ...
+            elif door = "blue":
+                # ...
+            else:
+                # ...
+        else:
+            print("You got stuck in a flood and drowned. Game over.")
+    else:
+        print("You fall into a hole. Game over.")
 
 if __name__ == "__main__":
     main()
