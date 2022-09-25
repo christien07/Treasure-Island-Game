@@ -28,13 +28,15 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
     if direction.lower() == "left":
         left_turn = input("This direction is flooded. Swim or wait?\n")
         if left_turn.lower() == "wait":
-            door = input("You waited for the flooding to subside and find a cellar. Inside the cellar, a doorway stands before you. Would you like to open the 'red' door or 'blue' door?")
-            if door = "red":
-                # ...
-            elif door = "blue":
-                # ...
+            door = input("You waited for the flooding to subside and find a cellar. Inside the cellar, a doorway stands before you. Would you \nlike to open the 'red' door or 'blue' door or 'yellow' door?\n")
+            if door.lower() == "red":
+                print("You were burned in a fire. Game over.")
+            elif door.lower() == "blue":
+                print("Eaten by beasts. Game over.")
+            elif door.lower() == 'yellow':
+                print("You win!")
             else:
-                # ...
+                print("Game over.")
         else:
             print("You got stuck in a flood and drowned. Game over.")
     else:
